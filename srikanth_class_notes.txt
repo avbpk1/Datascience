@@ -1,0 +1,378 @@
+/opt/anaconda3/bin/jupyter-lab
+https://github.com/srikanthpragada/DS_05_APR_2021
+
+--09-Apr
+Read about sample collection techniques
+scipy is scientific python
+
+Categorical -- example gender , branch - discrete values
+
+Contionous -- E.g. Marks, Salaries
+
+Mode is important when it is categorical
+
+-- End 09April class
+
+-- Start 10April
+
+Exercise
+
+Create 50 random numbers in the range 1 to 1000 and display lower outliers and upper outliers
+-- End 10th April
+
+
+Start 12-April
+
+For Jupyter notebook viewer
+Data Frame and Series
+Column is like a series
+df.salary.mean()  means salary is being used like a list
+df['salary'].median()
+
+In box plot, you can display outliers where as histogram, outliers arent shown
+s.plot.box(showfilers=false) -- to turn of out liers from box plot
+https://nbviewer.jupyter.org/github/srikanthpragada/DS_05_APR_2021/blob/master/stats/demo.ipynb
+
+--Correlation -- to understand if there is an influence of one variable on another. For example, experience and salary
+p value -- randomness in relationship -- the much lesser, the much better
+
+coefficient -- high coefficient is a strong relationship
+End - 12th April
+
+
+--Start - 14April
+Linear Regression
+Slope is very important. 
+Price = intercept + slope * size 
+y=a+bX
+y indicates dependent variable. x is independent variable.
+Intercept is Y value when x = 0 
+Example -- cab charges -- initial intercept(base price) + km * price per km
+
+If there are more than 1 variable -- for e.g. Size, bedrooms , age
+
+5000 per sq/ft
+-100,000 for age
+200,000 for additional bedroom
+
+There is only intercept but multiple slopes
+y = a + (b1 * x1) + (b2 * x2) + (b3 * x3)
+Example
+price = 0 + (100 * 5000) + (5  * -100000) + (3 * 200,000)
+
+Error -- distance between the prediction and actual is called error or Residual
+The goal is to adjust the slope in such a way that it is close to reality
+
+Mean Squared Error -- MSE -- to remove sign and
+
+Sum (MSE)/n
+
+-- End of 14 April
+
+-- Start of 15 April
+a = np.eye(5,5) -- eye -- identity matrix -- 1 is filled in diagonal
+
+np.linspace -- linearspace
+-- End of 15 April
+
+-- Start 16th April
+Slicing is a concept in python. Spend some time understandig slicing in python
+
+Assignment -- Mini
+Take an array of 5 x 5. Fill it with random numbers and display numbers that are greater than the average of the whole array.
+
+Python for data analysis Wes McKinney, covers Panda's and Numpy
+Python Data Science Handbook Jake Vanderplas
+-- End 16th April
+
+-- Start 17-April -- Methods of Array -- Methods of ndarray
+a.mean() -- is called ndarray methid
+print(np.add(a,b)) -- Universal function -- it is not a method -- because u r calling it with numpy library and not method of an object. 
+Method is always a function of an object and hence object.method is how it is usually called.
+
+What if u want to sort the whole 2 dimension array? -- Assignment
+
+numpy.org -- for full numpy documentation
+
+-- End 17th April
+
+-- Start 19th April - Monday --- Copy vs View
+
+-- Start 20th April
+Coefficient -- coeff.T -- transpose
+
+X.dot(coeff). Addint 1 as one of the features and coefficient at the beginning is imp
+
+Broadcasting -- Smaller array is broadcast to larger array to perform operations
+
+
+Assignment
+How many pixels have more than 100 for red? 
+If red is more than 100, reduce it to 100.
+
+-- End 20th April
+
+-- Start -- 21st April 
+Pandas -- Series and Datframes
+Series is a function
+Index in Series is also known as rowlabel
+Index can be nonnumeric and non-unique
+
+Elements in a series can be accessed by position also. For e,g - s[0]
+Error will be returned in case the custom index is also numeric and the position given is not defined as part of the custom numeric index. To overcome use the properties loc and iloc
+loc is purely based on custom index. iloc is based on position index		
+
+
+In dictionary -- key is unique
+In series -- index can be duplicated
+
+Display values in a series where there is a decrease from a previous value.
+
+ndarray means numpy array
+-- End 21st April
+-- Start 22nd April
+Important powerful methods
+--apply
+marks.apply(get_grade)
+equivalent function in python is map 
+map(get_grade, arks) but you need to write a for loop for printing
+for v in map(get_grade,marks):
+print(v) 
+
+Slicing is important topic
+
+You cant use loc for sorting and displaying top 2.
+Because the index keeps changing. loc is position based on position and hence will display in correct values
+for e.g. narks.sort_values(ascending=False).loc[:3] will all values until position 3 which is all values
+For index based retrieval -- use loc
+For position based retrieval -- use iloc
+
+Fill nulls with values is called Imputing the values
+
+When ever we use [] or loc[] it uses index
+iloc[] will use position
+pandas.pydata.org
+when u get info from data frame -- if data type is object -- it means string
+df.info()
+-- End 22nd April
+
+-- Start 23rd April
+Retrieiving data from data frames
+
+-- Normal Slicing, LOC and ILOC
+at, iat, loc, icloc
+at and iat do not support slicing
+at -- only for specific row and column and not for slicing
+
+e.g. print(df.at[0,'marks']) -- # 1st row -- marks column value
+print(df.iat[0,2]) -- #1st row, 2nd column value
+
+df.head() -- first 5
+df.tail() -- last 5
+df.sample(5) -- 5 random rows
+df.subject.isin['Python','Java'] -- compare with a alist of values
+Exercise -- Subject not java , marks less than 50
+
+df.where(df.marks > 80)
+
+df.filter -- filter is for labels. Not for data but for row or column labels
+df.nlargest(4,'Marks') -- pick rows with first 4 highest marks
+
+df['name'].drop_duplicates gives an array
+df['name'].unique gives series
+seaborn library
+-- End 23-April
+
+-- Start 24 April
+df.apply  can be used to find out not null values fy axis = 1ws. If rows are required, s[pecify axis = 1
+df.applymap() -- the function is applied to all rows and columns
+df.name.upper() -- retirns error - upper cannot be used on series
+instead use df.name.str.upper()
+KM58 VDK
+
+tRUE MEANS FALSE, PASS MEANS FAIL
+ASSIGNMENT -- Print Pass or Fail not True or False
+
+df.drop([11,13]) will remove rows but for a new copy
+df.drop([12,13],inplace=True) will remove rows from the original
+axis=0 is rows. depends on function.
+
+Assignment
+Create a new csv file books, movies or something else. 10rows
+-- End 24 April
+
+-- Start 26 April
+df.remane(columns = {'rollno': 'admno'}
+Concatenation, Joining
+pd.concate((df1,df2), ignore_index=True)
+
+If ignore_index=True is not set, then the indexes of the original data frames are takenn
+
+joining in data frames is by default outer index.
+The inner join is based on index
+
+pd.concat
+pd.merge -- merge , merges data based on common column
+df1.merge(df2,how='oter') for outer join
+
+Grouping
+df.groupby('subject') -- # data frame group by object
+grouping is for summaries 
+
+subgroup = df.groupby('subject')
+
+use tips data to see grouping happenin on multiple numeric columns
+
+tips.groupby('sex')[[total_bill','tip']].mean()
+grouping on multiple columns is possible
+pandas is not just for data science. It is also primarily
+for data analysis
+-- End 26 April
+-- Start 27 April
+
+Data Plotting, Wrangling and Pivot Table
+
+summary = tips.groupby(['day','time']).index
+summary = tips.groupby(['day','time']),as_index=False).sum()
+
+get_dummies()
+
+pd.get_dummies(tips[['smoker','day']])
+also called as 1 heart/or encoding
+tips.pivot_table(values = 'total_bill', index = 'day', columns='sex',aggfunc=['sum','mean'])
+
+Binning
+tips['bill_bin']=pd.cut(tips.total_bill,5)
+tips[['total_bill','bill_bin']]
+Binning is useful when we have outliers
+Using Log is another method of removing the effect of outliers so that ML algorithms can work correctly
+
+pd.qcut(tips['total_bill'],[0,0.25,0.75,1], labels['LQ', 'UQ','IQR'])
+
+pivot_table.plot.bar()
+
+latest payslip
+latest bank
+credit report
+
+techmyfile
+-- End 27th April
+
+-- Start 28th April
+Matplotlib is a python 2d plotting library. There is an extension to draw 3d also.
+
+-- End 28th April 
+
+-- Start 29th April
+
+-- End 29th April
+
+--Start 30 April
+Swarm Plot
+Categorical Plots
+
+Distance between the point and the line is called residual
+If residual is on 0, then there is a difference between predict
+and actual
+Heat Map 
+Correlation Matrix
+
+seaborn is better than matplotlib
+
+--End 30 April
+
+--04-May- Start
+pickling
+deployment
+zhango framework
+Data Science Life Cycle
+Feature Engg is used in Exploratory Data Analyis
+Not all features need to be used for prediction.
+In this phase , you can drop certain features after analysis
+--04-MAy End
+
+--05 May Start
+Classification case study -- loan_prediction.ipynb
+train = pd.read("loan.csv") -- train is the data frame
+train.shape() will give you rows and columns 
+outout -- 623,13
+train.sample(5) will give a sample data of 5 rows
+train.info() -- gives info about the data -- not null etc
+train.describe() more info
+train[['ApplicantIncome','CoapplicantIncome']] subset of values
+train
+-- 05 May End
+
+--08-May-Start
+different models
+--08-May-End
+
+-- 10-May Start
+Train , Validation and Test data sets in the range of 60%, 20%, 20%
+
+Cross validation will divide the data into K-Fold . If k =4 it will split into 4 sets. For each data set, a model is created.
+The advantage is -- every observation is used in training and every observation is used in testing
+
+model = 
+scores = cross_val_score(model, train, y, cv = 5)
+
+some of the algorithms use cross validation
+
+E.g. LogisticRegressionCV
+train_test_split?
+
+confusion matrix gives an array of true positives and true negatives
+Amber
+--> Ensemble Methods
+Most of the competitions were won by individuals who used Ensemble algorithms
+
+load_iris from sklearn
+iris data is toy data
+from sklearn.datasets import load_iris
+
+d= load_iris()
+print(d.DESCR)
+
+X, y = load_iris(return_X_y=True)
+votingclassifier.ipynb
+page 68 of course material
+Bagging means --  Bootstrap Aggregation
+We build the same model but it will take different set of training observations
+Again Model voting is done
+ensemble_models.ipynb
+
+Genie Index
+--10 May End
+
+--Start 11-May
+Technique Boosting
+XGBoost -- in competitions if u want to win
+Gradient boosting classifier which internally uses different decision trees
+Stacking
+Voting classifier is different
+
+svc and knn require scaling
+
+test_model.ipynb -- plots and curves -- advanced classification concepts
+
+u have to use the same tfidf
+
+---Sentiment Analysis
+
+Bag of words
+2 types of matrices
+sparse matrix, dense matrix
+hotrl_reviews.ipynb
+--End 11-May
+
+-- Start 12-May
+Case Study 2
+car/prepare_data.ipynb
+gradient decent ,  regularisation, pipeline, how to create one, Efficient ways to check multple hyper parameters. Grid search
+use case
+
+df.isin([?]).sum() -- gives counts of values in each column which have ?
+Finding the price of a car
+price_finder_models.ipynb
+
+-- End 12-May
