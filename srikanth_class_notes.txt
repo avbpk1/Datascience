@@ -376,3 +376,49 @@ Finding the price of a car
 price_finder_models.ipynb
 
 -- End 12-May
+--> 14- May Start
+-- Parameters are values that the model generates 
+-- Hyper parameters are for e.g. k in k nearest neighbours which are used to 
+--Grid search is to find best hyper parameters
+--Gradient decent is to find best parameters
+is sklearn -- random_state = (1 or 12 0r 100 or any value) if we have to keep random state consitent
+blob_demo
+matplot lib is very important for scatter plots
+
+blob_demo.ipynb for un supevised learning
+for k means - always scale data
+make_moons.ipynb
+DBSCAN - density based clustering -- another technique
+In dbscan -- u dont mention how many clusters are required. The algorithm figures it out
+-- 14 May End
+
+--Start 15-May
+Page  101
+DBSCAN
+eps - epsilon or radius
+customer_seg.ipynb
+what should be the ideal epsilon -- radius? reducing epsilon will increase clusters and increasing will reduce them
+
+Hierarchial clustering - Aglomerative -- suitable for small clusters
+, Divisive -- suitable for large clusters
+cluster map
+seaborn.clustermap
+dendrogram using scipy
+ward is a function to calc distance
+
+kmeans -- centroid -- dont place centroids randomly
+
+unsupervised - Association - REcommender systems
+REcommender system is an example of unsupervised machine learning using association
+candidate generation
+-- reduces billions down to hundreds of thousands
+Scoring
+
+--Re-ranking
+Recommender - system -- content based and collaborative filtering
+
+scoring
+Assignment -- Display all border points in a different colour
+
+
+-- End - 15 May
