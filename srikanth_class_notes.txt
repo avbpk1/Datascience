@@ -420,5 +420,15 @@ Recommender - system -- content based and collaborative filtering
 scoring
 Assignment -- Display all border points in a different colour
 
+implicit
+
+Recommender System - Collaborative filtering
+Predict user ratings for products based on a user's similarity with other users
+It may be user based or item based
+item based - neighbours
 
 -- End - 15 May
+-- Start - 16May
+Recommending movies in collaborative filtering
+movies_cf_final.ipynb
+-- go through sides and understand clustering
