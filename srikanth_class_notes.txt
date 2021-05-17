@@ -1,3 +1,8 @@
+sTART - 17 maY
+HAmming distance -- it is a % disagreement between 2 sequence values. For e.g. [1,2,3 [1,2,4] -- 33.33%
+distance = hamming(user1_ratings,user2_ratings)
+eND - 17 mAY
+
 /opt/anaconda3/bin/jupyter-lab
 https://github.com/srikanthpragada/DS_05_APR_2021
 
