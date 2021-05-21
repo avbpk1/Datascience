@@ -1,3 +1,44 @@
+-- start 21 May
+formatting options using mark down
+bold , italic, monospace. Monospace is a where all characters maintain an equal space. Monospace can be defined with a back quote
+
+Refere notes for red, yello, green, blue -- alert, warning etc boxes iusing css classes.
+
+Image can also be put into a note book
+
+myurl = "https://www....."
+from IPython.display import Image
+Image(url = myurl)
+jupyter notebooks
+-- enf 21 May
+--- shell commands
+Shell commands start with exclamation
+!cd,  type etc -- demo.ipynb
+--Magic Fuctions
+Magic functions are of 2 types.
+Line magic and cell magic
+Line magic starts witjh % and takes the rest of the line as command
+cell magic starts with %% and takes the rest of the cell as command
+e.g. %pwd
+%env
+env = %env -- will give a dictionary of env variables assigned to env
+%who will return al variables created so far
+-- cell magic
+
+nbviewer.jupyter.org
+
+you can give the github url into that and the note book viewer will output the data.
+
+
+
+
+
+
+
+-- end 21May
+
+
+
 sTART - 17 maY
 HAmming distance -- it is a % disagreement between 2 sequence values. For e.g. [1,2,3 [1,2,4] -- 33.33%
 distance = hamming(user1_ratings,user2_ratings)
