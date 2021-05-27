@@ -1,3 +1,40 @@
+-- Start 27 MAy
+Boolean Indexing
+Boolean index and the array index should have the same number of elements
+Very powerful concept
+
+When ever boolean indexing is applied on an array -- the resultant is a vector not a corresponding array of same size. Reason is that the number of elements 
+In each row , the number of elements being selected and returned couuld vary depending on the condition
+as we dont have the same number of elements in each row -- hence returns a single dimension array -- vector
+
+numpy_demo.ipynb -- class room note book
+
+Masking 
+
+(a > 20) & (a < 40) -- 2 boolean indexes  -- remember to use & which is the mask. In python  # a [(a > 2 and a < 8 )] -- #Anding in python does not work here
+
+a[prime(a)] -- prime(a) is a function which is generating a list of booleans. 
+
+Boolean indexing is a feature of numpy and panda libraries. It is not available in regular programming languages
+
+a.mean() is a method because any thing you call with an object is a method -- a method is always called with an object
+
+np.add(x,y) -- function. Functions are universal and are called with the package  -- important differentiation
+
+a1 = np.arange(5)
+a2 = np,arange(5)
+a1 == a2 # This will compare each element of the array a1 with the corresponding element in the array a2. And returns an array of booleans
+a1.__eq__(a2) -- internal represemntation of a1 == a2. 
+
+all() or any() methods -- if all elements are True , then all wil return True. else False
+
+(a1==a2).all() -- Every element in the first array
+--Methods of ndarray
+a = np.random.randint(1,100,(6,6))
+
+-- End 27 May 
+
+
 -- start 21 May
 formatting options using mark down
 bold , italic, monospace. Monospace is a where all characters maintain an equal space. Monospace can be defined with a back quote
