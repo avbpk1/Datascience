@@ -1,3 +1,24 @@
+-- Start 28 May
+axis = 0 will retrieve data column wise
+axis = 1 will retrieve data row wise i.e. student wise
+e.g.
+marks.sum(axis=1) 
+marks[::2].sum() -- alternate rows sum
+
+argmax() will give the index/position of the element that has the max value
+argmin() will give the index/position fo the element that has min value
+argsort() wil give indexes of the sorting order. Not the actual values
+
+sa = a[a.argsort()]
+
+screen shot 56
+a and b are 2 different objects which have different ids but they point to the same memory. When you slice -- u get a view.
+
+if we wamt to get a copy and not a view
+a2 = a.copy() -- will give a copy of that into a2. Each one will have its own memory location.
+
+-- End 28 May
+
 -- Start 27 MAy
 Boolean Indexing
 Boolean index and the array index should have the same number of elements
