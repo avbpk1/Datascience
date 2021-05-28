@@ -17,6 +17,15 @@ a and b are 2 different objects which have different ids but they point to the s
 if we wamt to get a copy and not a view
 a2 = a.copy() -- will give a copy of that into a2. Each one will have its own memory location.
 
+arrays extracted based on a boolean index and array of indexes is a copy and not a view. Unlike slicing.
+
+
+universal functions -- page20 -- numpy
+-- stacking and splitting -
+Horizontal stacking  - 
+
+2 x 2 -- 2 x3 -- as long as the number of rows is same then horizontal stacking is possible
+vertical stacking as long as the columns are same
 -- End 28 May
 
 -- Start 27 MAy
