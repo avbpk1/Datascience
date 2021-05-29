@@ -1,3 +1,42 @@
+-- Start 29 May
+Be careful with horizontal and vertical splits. It might be confusing the way we think. Horizontal split happens if you imagine a vertical line in between the elements.
+look at oage 30 examples of the course material.
+
+Linear Algebra
+np.linalgeb
+
+-- Remember reshape does not change the shape in place. It gives a view
+--- No of columns and the number of rows in the second should be equal if multiplication has to be successful
+
+Dot product is different from matrix product -- check examples
+
+ y = a + b1x1 + b2x2
+ 
+ x 1 1000 2
+   1 1500 3
+   1 1800 3
+
+weights arrau
+a   2000000
+b1    5000
+b2   5000000
+
+x @ w -- coefficinets /weights -- look at coef example  x @coef  -- 68.png
+above is linear regression using linear algebra
+
+----Broadcasting 
+is the concept -- when 2 arrays are not of the same size. To bring them to the same size, numpy uses broadcasting 
+
+simple example is scalar broadcasting. 
+for e,g 
+[1 2 3] + 10
+[1 2 3] + [10 10 10]
+[11 12 13]
+Same logic for 2 dimensional as well -- slide 70 -- broadcast 2 example
+
+
+-- End 29 May
+
 -- Start 28 May
 axis = 0 will retrieve data column wise
 axis = 1 will retrieve data row wise i.e. student wise
