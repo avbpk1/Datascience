@@ -8,7 +8,8 @@ pandas -- loc -- exclusive
 iloc inlusive
 
 -- understand row positions, row labels
-
+--- Exercises related to pandas -- assignments
+-- Display months where value is less than previous months -- series_demo.ipynbt -- 59
 
 -- End 31 May
 
