@@ -1,3 +1,17 @@
+-- Start 31 May
+Image processing
+import matplotlib.pyplot as plt
+import matplotlib.image as image
+from scipy import misc
+
+pandas -- loc -- exclusive
+iloc inlusive
+
+-- understand row positions, row labels
+
+
+-- End 31 May
+
 -- Start 29 May
 Be careful with horizontal and vertical splits. It might be confusing the way we think. Horizontal split happens if you imagine a vertical line in between the elements.
 look at oage 30 examples of the course material.
