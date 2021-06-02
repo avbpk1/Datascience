@@ -1,3 +1,63 @@
+-- Start 03 Jun
+data management , grouping , pivot tables etc
+-- End 03 Jun
+
+--Start 02Jun--
+Pandas
+at() 
+iat() dont support slicing and hence faster than loc and iloc
+stick to loc if u r dealing with rows and columns. It is easier and intutive. 
+df.loc[:8,:'subject'] # Rows upto row-level 8, cols upto subject
+iloc -- is based on indexes rather than labels
+
+df.filter(regex = 'e$') # select columns where column name ends with Letter e
+df.filter(regex='[0-9]+$') # select columns ending with a numeric
+df.filter(egex='6',axis=0) -- filter is all about labels and not data. This filters rows with row index 6
+
+vecotrization is a term used to indicate that an operation is applied across the whole of the array
+df.nlargest(4,'marks') # keep=first -- indicates even if there are duplicate values , only first one will be fetched
+apply() and applymap() -- 022.png, 23.png
+
+df.apply(lambda s: s.notnull().sum().axis =1) -- apply operation on rows -- default is 0 which means columns
+
+In applymap -- every alue of the data frame is passed. 
+df.applymap(lambda v:str(v).upper()) # will convert every element into upper.
+
+df.name.upper() gives a value because upper() cannot be applied on series
+--solution is -- df.name.str.upper() -- each value in the name series is converted to string and then subsequently apply any string related operation. Very powerful
+--Masking is the term used to use 2 boolean conditions together. e.g. where a > 10 and a <15
+--> Attribute str
+df.name is a series and it is a collection of values. If we have to take each value in the series should be converted to uppercase. Perform an operation on each value. If we dont want to use apply.
+
+-- look at screen short 28 for example or regular expression grouping df.name.str.extract('([A-Z+])([A-Z]+)') -- GIVES 2 columns corresponding to the 2 regular expression groups
+
+-- look at tips_df.ipynb -- experiment on tipsdf
+
+import pandas as pd
+import seaborn as sns
+
+tips = sns.load_dataset('tips')
+
+github.com -- seaborn
+
+
+-- Assignment
+1) display rows where day is starting with S
+2) display rows where the percentage of tip amount to total bill is greater than 10%
+3) display transactions for male smokers
+4)display where size  is 3, 4 or 5 
+5)display integer portion of total bill along with day and time
+6)display unique days -- 
+7) top 10 bill amounts
+8) display rows where row index contains digit 9
+9) display rows where day is sat or sun, non smoker , male customer with table size > 2
+10) display [odd rows and columns] that contain letter 'O' (letter O)
+
+
+-- End 02 Jun
+
+
+
 -- Start 31 May
 Image processing
 import matplotlib.pyplot as plt
