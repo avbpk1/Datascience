@@ -1,3 +1,45 @@
+-- Start 05 Jun
+Matplot lib
+seaborn is a wrap on top of matplot lib and better.
+
+matplotlib is a subset of seaborn
+-- End 05 Jun
+
+-- Start 04 Jun
+pandas -- page 35. Grouping an dother aggregate functions
+-- most of the functions applicable to data frames are also applicable to series.
+--df.fillna() -- fills null values
+
+whole fillna is about imputation -- i.e. a technique used to filling the null values with an appropriate value like -- mean, median or 0
+other techniques are forward fill and backward fill. Forward fill will take the previous non null value and put it. Backward fill will take the non null value and fills the previous null value with that.
+
+-- Binning is the technique of dividing data into groups and helps in removing outliers for e.g.
+-- Histogram is internally binning the data first and then it is drawing the plot
+(85.0, 100.0] representation in maths indicates 85 -- parenteheses is included , ] square bracket --non inclusive i.e. 100 is not included
+
+qcut -- is going dividde the data based on the percentile -- quantile based discretisation function
+
+Categorical FEatures are to be Encoded -- 1 technique is to replace it with numbers.
+But the problem with the number replacement is -- for e.g. if Male is encoded with 0 and F is 1. During calculations F will be treated as higher when compared to other.
+In such cases, we create dummy columns
+
+------Dummies
+getdummies will retrieve all non-numberic columns   -- 42.png 
+also called as 1 or/heart encoding
+Equivalent to junk dimension probablu?
+
+1 heart encoding will increase the number of columns.
+
+-- Writing Data frame -- to json, to file 
+orient is important for the json structure
+each row should be saved as a json object
+if we orient with records
+
+Last thing in pandas is plotting -- thought it is not the focus
+
+
+-- End 04 Jun
+
 -- Start 03 Jun
 data management , grouping , pivot tables etc
 -- End 03 Jun
