@@ -43,7 +43,12 @@ you can save the multi graphs as jpg and attach it as an attachment to email. --
 -- Countries json
 
 Dynamo DB stores data in items -- each item is a json object.
-json is forefront. xml was very popular and it was overtaken by json.  -- 48.png 
+json is forefront. xml was very popular and it was overtaken by json.  -- 48.png
+-- countries = pd.read_json()
+-- stacked grapjs
+
+use data other than tips
+
 -- End 05 Jun
 
 -- Start 04 Jun
@@ -63,7 +68,6 @@ qcut -- is going dividde the data based on the percentile -- quantile based disc
 Categorical FEatures are to be Encoded -- 1 technique is to replace it with numbers.
 But the problem with the number replacement is -- for e.g. if Male is encoded with 0 and F is 1. During calculations F will be treated as higher when compared to other.
 In such cases, we create dummy columns
-
 ------Dummies
 getdummies will retrieve all non-numberic columns   -- 42.png 
 also called as 1 or/heart encoding
