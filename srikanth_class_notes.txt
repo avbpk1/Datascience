@@ -1,8 +1,49 @@
 -- Start 05 Jun
-Matplot lib
+Matplot lib -- matplot lb is open source version eqqivalent to matlap
 seaborn is a wrap on top of matplot lib and better.
 
 matplotlib is a subset of seaborn
+
+Anatomy of matplot lib
+
+Figure is top most. A figure can have multiple AXES. Each Axes corresponds to a distribution. Plot, graph, axes all mean the same
+1 Axes can have multiple Axis -- usually x and Y
+
+--Assignment -- Try to explode the largest Wedge. Find out the largest wedge and pull it out.
+-- matplotlibdemo -- piechart section -- 17
+-- Every object is a collection of objects aain
+
+ax = plt.pie(....)
+t = plt.title (...)
+print(ax) -- interesting output -- returns list of all objects -- example wedge objects. 
+
+-- matplot lib -- scatter plots -- examples are there but seaborn is better. Much better for graph especially scatter plots
+#plt.gcf().set_size_inches -- gcf is get current figure
+
+Boxplot -- is of distribution for data
+
+histogram -- distribution of data -- specify bins 
+-- Range is kind of an iterator -- u dont get any thing until you take a value from otu
+
+--Object API -- so far we have used module API. Plt is a module API. Object API gives more control
+ax= plt.subplot()
+print(type(ax))
+ax.bar(dat_total) etc
+
+Why do we need object level api
+
+to create multiple graphs with the same data
+
+fig.ax = plt.subplots(1,2) -- -- array of graphs
+
+you can save the multi graphs as jpg and attach it as an attachment to email. -- 45.png -- look at a practical implementation of Python usage for lambda.
+
+--47.png for Text -- zip(days,totals) --Printing text on graphs.
+
+-- Countries json
+
+Dynamo DB stores data in items -- each item is a json object.
+json is forefront. xml was very popular and it was overtaken by json.  -- 48.png 
 -- End 05 Jun
 
 -- Start 04 Jun
