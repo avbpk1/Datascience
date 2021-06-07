@@ -1,3 +1,106 @@
+-- Start 07Jun
+Stacked charts
+Stacked bar is about giving bottom argument -- 
+ax = plt.subplot()
+ax.bar(smoker_total.index, height=smoker_total
+
+--
+smoker_total.plot.bar(stacked=True) -- # easier way
+smoker_total is a pivot table and hence a compatible object 
+--Multi Bar
+smoker_total.plot.bar()
+matplotlibdemo.ipynb--
+
+smoker_total.plot.line() -- integration between pandas and matplotlib -- pandas gives the dataframe
+Multi sub plots
+
+-- Horizontal Bar
+-- line graph
+Histogram
+ax=tips.hist()
+ax[0,0].set_title("Table_size")
+-- the above draws histograms for all columns. That is because tips.hist() is returning an array of dataframes
+
+
+-- Countries -- get data for the countries via the api
+from then on tut is data frame
+-- Top10 countries by population in Asia
+--Using matplot lib -- we can draw a number of graphs
+
+--- Better than matplotlib is SeaBorn
+designed for statistical graphs built on top of matplot lib and integrated with pandas data structures
+*supports categorical variables
+
+Relational Plots
+Categorical Plots
+Dist Plots
+Regression Plots
+Matrix Plots
+
+--Seaborn Demo
+import seaborn as sns
+--tips and flights data sets
+sns.set(style='dark') -- sets the theme
+
+Categorical Plots
+boxplot()
+
+ax=sns.boxplot(x='day','y='tip',data=tips) -- just needs data and seaborn does the rest. Much simpler compared to matplotlib , extra paremeter -- showfliers=False wil remove outliers
+
+--hue is saying it is going to draw -- for each x -- it will not draw 1 graph but it will draw 2 graphs . For e.g. hue="sex" it will draw a bar for each unique valie
+
+--countplot() 
+for each dawy -- how many transactions are there -- count plot gives that
+
+Even for count plot, hue can be given 
+
+whitegrid is an option that you can be provided
+style = 'whitegrid' instead of dark
+
+Difference between mmatplot lib and seaborn is -- in matplotlib, you have to set the data for grouping where as in seaborn -- it will do it , if we just specify the data and the x, y columns
+
+-- Display data according to countries -- Total Area -- Average area
+Once the data is in dataframe, it can be used to draw different stules
+
+Categorical Plots
+--Catplot
+--these are fugure level
+sns.catplot(,,,,col='smoker','') -- 2 different graphs for smoker and non smoker
+in matplot -- you will have to define subplots and then do it
+
+if we give col= 'day' it gives 4 graphs -- 1 for each day
+
+The default estimator is mean -- which implies it gives the average biill value for each day 
+subplots_adjust(top=0.75) -- will leave 25% margins overall at the top
+
+-- you can also set rows 
+
+--boxplot
+catplot is a figure level 
+
+kind parameter -- can be only 1 -- so, you cant have bar and line together for example
+
+--stripplot
+It is a scatter plot with 1 categorical value
+stripplots can also use hue
+
+--swarmplot -- swarmplot does not overlap-- it tries to mark each transaction clearly without overlapping
+dodge is important only when you are using hue -- it clearly demarcates the lunch and dinner plots for examople
+
+-- fligjts data -- timeseries data -- try various graphs
+For timeseries data -- line graph is best. Other examples shareprice
+senesexdata -- line graph
+in seaborn -- u do not explicitly need to specify the grouping. estimator = sum -- will give the count of passengers on a given day.
+
+-- linegraph is a relational map because it gives relation between x and y
+
+figure plots are multiple plots
+
+
+
+-- End 07 Jun
+
+
 -- Start 05 Jun
 Matplot lib -- matplot lb is open source version eqqivalent to matlap
 seaborn is a wrap on top of matplot lib and better.
