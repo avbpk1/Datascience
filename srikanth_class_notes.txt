@@ -1,3 +1,40 @@
+-- Start 08 Jun -- 
+RElational Plot
+
+sns.scatterplot() 
+you can go by style and hue also
+
+--
+distplot() is figure level
+histplot is histogram
+barplot -- categorical value on x and continous values are on y
+
+
+rugplot draws sticks to show the distribution of data
+
+
+Multiplot 
+Pairplot -- very interesting -- 65.png
+seaborn_demowhat is kde
+
+u get distribution as well as comparision
+
+regression plot -- draws a regression line
+
+lmplot() -- figure level regression plot
+
+residual plot -- very interesting and nice
+
+Face@grid
+
+MAtrix Plots -- To draw heat maps -- 
+first get pivot table
+
+correlation matrix -- reltion  between total bill and tip. 
+
+-- End 08 Jun
+
+
 -- Start 07Jun
 Stacked charts
 Stacked bar is about giving bottom argument -- 
