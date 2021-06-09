@@ -1,3 +1,21 @@
+-- Start -09Jun
+If Target -- Y is a continous value(numerical) -- it is called Regression
+If Target -- Y is a Categorical Value i.e. Spam or Ham in emails -- Diseased -- Y or N -- it is called Categorical 
+
+-- Supervised Learning is the mechanism by which The model helps the system to learn about the predictions. The target data should be present to help the Supervised algorithms to predict.
+
+Unsupervised is when we dont have target historic data
+
+steps for univariate analysis --
+
+features are also called dimensions
+it is important to identify which features to keep and which features to drop because not all features are important
+This is called reducing dimensionality. Reducing features
+By doing this -- model complexity is reduced -- especially useful if u r processing images
+
+-- End 09 Jun
+
+
 -- Start 08 Jun -- 
 RElational Plot
 
