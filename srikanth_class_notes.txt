@@ -1,3 +1,35 @@
+-- Start 12 Jun --
+
+-- End 12 Jun
+
+-- Start 11Jun
+Feature Scaling 
+Goal is to put all the features in the same scale. For e.g. iin the example GRE is 11 + and cgpa is 0.6). This is needs to be scaled
+2 techniques
+
+Normalization
+
+Standardization -- Standard Scaler -- 19.png, 20 and 21, 22.png of comparitive values for before and after
+
+Only x i.e. features are to be scaled. Not the target.
+
+The techniques may not always improve
+
+24.png -- Remember Train Data has to follow the steps of fit and transform but for test data , only transformation is sufficient. No need to fit again *** very imp
+
+Even for prediction -- we hvae to transform 
+i.e. chances = model.predict(ss.transform([[320,110,8.5],[310,115,9.2]]
+
+--Pickling Models -- Serialization
+--Unpicking or Deserialization
+Remember the data input to a model should always be an array even it if it is a single row. It should not be a vector
+test_admissions.ipynb
+test_lr_model.py
+
+26.png -- list of items required to run the model
+28.png --how end user interacts with the web app
+29.png includes API
+-- End 11 Jun
 -- Start -09Jun
 If Target -- Y is a continous value(numerical) -- it is called Regression
 If Target -- Y is a Categorical Value i.e. Spam or Ham in emails -- Diseased -- Y or N -- it is called Categorical 
