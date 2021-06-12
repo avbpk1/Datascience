@@ -1,4 +1,8 @@
+-- Start 14Jun
+Classification
+--End 14 Jun
 -- Start 12 Jun --
+Datascience Life Cycle discussed.
 
 -- End 12 Jun
 
