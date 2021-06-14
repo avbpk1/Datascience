@@ -1,5 +1,11 @@
 -- Start 14Jun
 Classification
+load_prediction.ipynb
+
+If there is a lot of skewing in the distribution of the data -- in the loan example -- the applicant income
+Techniques to reduce the skewing include transforming using log() or binning techniques
+Univariate Analysis
+Bivariate Analysis
 --End 14 Jun
 -- Start 12 Jun --
 Datascience Life Cycle discussed.
