@@ -1,3 +1,23 @@
+-- Start 15 Jun
+loan_prdiction.ipynb has got good examples of grouping data using data frames.
+Data transformation of applicant income can be done using binning technique
+Do Titanic case study or some other.
+
+If a particular variable such as credit history is important and there are null valies -- then it is best to drop the rows. 
+
+After wrangling -- data is written to final_loan.csv
+
+remember x is input -- y is target
+
+confusion matrix -- 48.png
+
+Actual     Pred         Classify
+Positive positive      True Positive
+Negative Positive      False Positive
+Negative Negative     True Negative
+
+
+-- End 15 Jun
 -- Start 14Jun
 Classification
 load_prediction.ipynb
