@@ -1,3 +1,33 @@
+-- Start 17JUN
+
+DECISION TREES
+decision tree does not require scaling
+machine_learning material
+
+if the number of branches in the decision tree are large, then it will go into overfitting i.e. trying to fit in the train data 
+
+Which feature is to start with as the top most node?
+
+this is to be based on impurity-index a.k.a gini-index, entropy will help in deciding that. gini-index is better but entropy is better balanced
+
+from sklearn.tree import export_text
+
+KNN - K nearest neighbour - K is nothingy but the count. Euclidean distance
+
+Requires more memory 
+
+from sklearn.neighbors import KNeighborsClassifier
+For this data has to be scaled similar to logistic regression.
+
+-- Naive Bayes
+--Stable to data changes
+--Ability to work with large data set
+-- Called as Naive because it treats all features as equally important and it is based on Bayes Theorem which is conditional probability
+-- 77.png
+-- 78.png -- how to make a choice of models picture -- 79.png
+
+-- END 17 JUN
+
 -- Start 15 Jun
 loan_prdiction.ipynb has got good examples of grouping data using data frames.
 Data transformation of applicant income can be done using binning technique
