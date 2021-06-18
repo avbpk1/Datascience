@@ -1,3 +1,61 @@
+-- STart 19Jun
+stackingclassifier
+
+--End Jun 19
+
+-- Start 18Jun
+Support Vector Machines -- SVC -- sklearn 
+Good for linear variables
+
+Wisdom of the Crowd -- :) 
+Views of multiple people as compared to the one intellectual -- e.g. KBC Polling
+
+The applicability is 
+Try for different results 
+
+Instead of using the results of one model -- Take the results of the 3 models -- 83.png
+Take the voting of 
+
+Ensemble Data , classifier, predictor , model -- all mean the same
+votingclassifier.ipynb
+--voting classiifier comes from ensemble module
+
+Creating Voting Classifier
+
+Soft voting is possible only when we get probability
+Hard voting is more binary i.e. 'Y', 'N'
+
+Bagging, Boosting
+
+Bagging - 84.png -- if there are 3 predictors , different sets of data are provided t
+
+Voting classifiers uses diversified models and each model is fed with the same set of data
+Bagging technique uses differnt bags(subsets -- remember the subsets can also mean different set of features and not just data) of data but fed through the same model
+Bootstrap aggregation or BAgging
+
+Random Forests is the best example for bagging
+
+RandomForestClassifier
+
+Decision Trees do not give soft voting because there is no calc of probability
+
+voting classifier gives it 
+
+Baggimg classifier gives you the option to select base estimate
+
+Boosting is trying to create models in sequence
+
+GradientBoosting
+AddupBoosting
+ensemble_models.ipynb
+
+n number of classifiers or steps -- results are refactored based on the weigths of results at each step
+
+
+--End 18Jun
+
+
+
 -- Start 17JUN
 
 DECISION TREES
