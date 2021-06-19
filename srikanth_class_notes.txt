@@ -1,5 +1,93 @@
 -- STart 19Jun
 stackingclassifier
+Base learners are preditors/classifier -- same terminology
+page 75 if meachine learning
+
+MetaLearner is converged from base learners
+
+Baselearners can be different algoruithms -- for e,g, Decistion Tree, KNN, SVC
+
+3 Ensemble Methods
+
+Boosting, Bagging, Stacking -- remember boosting is sequential and weighted
+all work on the principle of wisdom of the crowd
+they are all based on the priniciple that a combination of simple prediction models 
+
+
+--> How to DEal with Cross Validation
+92.png -- validation techniques also 93.png
+
+A part of the available test is used for training and a part of it used for testing
+-- problem is only 80% is used for training and 20% for testing
+Another technique is
+K-Folds -- 94.png
+
+K-Fold for Cross Validation -- with this technique, we are effectiviely using entire data for training and testing. Especially when there is less amount of data.
+
+Others are LOCF -- Leave out one for cross validation
+
+Stratified K Fold Cross Validation -- is a varaiation of K Fold Cross validation to ensure that there is a good representation of data when compared to simple K Fold Cross Validation which has a tendency to not having good representation of data
+
+-- When dealing with cross validation we dont specifiy percentage of train/test -- it internally decides -- cross_validation.ipynb
+
+cross_val_score is the name of the function
+
+Logistic Regression with built in cross validation 
+
+Algorithm MSC -- Accuracy
+
+----- Next Case Study -- Sentiment Analysis
+
+Labelling is an important aspect in reviews -- for sentiment analysis for example
+It is a key exercise and could be manual
+
+
+-- For models to be built -- text has to be convert to numbers because the models work on numeric data
+--bag_of_words.ipynb
+This called bag of words
+corpus -- refers to data
+Steps required are
+
+1) Tokenize -- Tokenization is the process of splitting words from text. 
+2) Counting -- Occurance if the words 
+3) Normalizing -- Normalizing and weighting with diminshing importance tokens that occur in the majority of the samples/documents
+
+Bag of Words
+We call vectorization i.e. Tokenize, Count and Normalize) the genreral process of turning a collection of text documents into numerical feature vectors
+
+The specific strategy is called Bag of Words or Bag of n-grams
+
+count vetcorizer
+sklearn.featureextractor from text
+
+Each Token is treated as a column
+
+95.png, 96.png-- explains about the complexity of tokenization
+scipy.sparse.csr.csr_matrix 
+Sparse matrix -- This is not dense matrix to take into account only values
+
+Sparse MAtrix is not a regular matrix with n rows and n columsn where we have values for all
+
+Sparse MAtrix can be converted to regular matrix if required
+
+fit_transform of countvectorizer is automatically giving a sparse matrix
+97.png
+
+
+TFIDF means Term Frequency Times Inverse Document Frequency tf-idf
+MEans each token has its own importance and the more frequency it has , it is less important
+
+TfidfTransformer
+
+TfidfVectorizer
+
+Tokenizing, counting are done by Count Vectorizer
+Normalizing is done by TF-IDF
+
+TfidfVectorizer -- can do it all together.
+
+
+
 
 --End Jun 19
 
