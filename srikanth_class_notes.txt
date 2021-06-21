@@ -1,3 +1,41 @@
+-- Start 20 Jun
+Tokenize, count, normalize -- tfidf
+
+TfidfVectorizer -- 2 steps together -- convert a collection of raw documents to a matrix of TF-IDF features
+
+hotel_reviews
+more frequency , less importance
+
+tfidf.vocabulary_
+
+corpus should be bigger
+
+Assignment -- find out where the token is not 0 -- then it is
+find out which words it is considering negative or positive
+
+Algorithm was Logistic regression
+
+
+Text Classification using BernoulliNB
+Variation of NaiveBayes
+stop wrods are not given i.e. common english words are not ignore
+Labelling data is important for supervised classification
+
+if no labelling is done -- then it can be done by unsupervised learning
+
+try gradient boost, grid search
+
+loan -- data wrangling
+admissions -- no data wrangling
+reviews -- text analysis
+
+car -- case study -- price of the car based on details -- uci machine mearning repository -- view all data sets
+car/prepare_data.ipynb
+
+-- End 20 Jun
+
+
+
 -- STart 19Jun
 stackingclassifier
 Base learners are preditors/classifier -- same terminology
