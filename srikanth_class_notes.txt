@@ -1,4 +1,30 @@
--- Start 20 Jun
+-- Start 22nd Jun
+prepare_data.ipynb-- for preparing car data -- pricing for cars
+price_finder_models.ipynb
+
+dummies or one_hot encoding will increase the columns
+
+-- Linear Regression -- to start with
+80 - 2- and build it
+find coefficients of the model -- coefficenets are nothing but slopes in linear regression. For every unit of increase in size, there is 36 units. For e.g. if there is an increment of 1 size  in engine size -- there is 36 dollars increase in size
+
+exercise -- standardise the data and try
+
+Random forest regressor -- try it
+feature importance can be derived using gini index
+
+Gradient Descent and Stocastic Gradient descent
+
+Gradient descent is an optimisation technique for parameters. Slope/Weight/Coefficient or Model Parameters all mean the same. These are not hyper parameters
+Reduce Cost -- Cost here means error -- i.e. difference between predicted and actual -- goal is to reduce the cost. At what slope do we get the best cost.
+In matematical terms , slope is called partial derivative
+Algorithm is designed in such a way that the slope is the best possible one -- 
+It optimises the intercept anbd slope to reduce cost
+Cost function is always a convex function -- like a bowl 
+
+-- End 22nd June
+
+-- Start 20 Jun-- 
 Tokenize, count, normalize -- tfidf
 
 TfidfVectorizer -- 2 steps together -- convert a collection of raw documents to a matrix of TF-IDF features
