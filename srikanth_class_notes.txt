@@ -1,3 +1,10 @@
+-- Start 24 Jun
+Pipeline
+Unsupervised Learning
+
+-- End 24 June
+
+
 -- Start 23 Jun
 
 Gradient descent is an optimisation technique
