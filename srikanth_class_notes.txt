@@ -1,3 +1,99 @@
+-- Start 23 Jun
+
+Gradient descent is an optimisation technique
+
+LEarning Rate -- is the incremental step used to optimize the descent 
+
+--price_finder_models.ipynb
+eta0 -- hyper parameter 
+max_iterations == 1000
+tol=0.001 -- when slope is smaller than this or the iterations 1000 which ever reaches first, will stop
+
+---------Regularisation is important --------
+2 important terms before that
+a) Bias b) Variance
+Bias is bascially error with training data -- when model doesnot capture true relationship in train data -- it is called bias
+LowBias is overfitting i.e. where model understood train data well. 
+When model is overfitting , it could result in high variance.
+
+goal is to have low bias and ow variance -- balance is important
+
+when a model is underfitting -- increase the bias so that variance can go down.
+How to increase bias -- Regularization is the technique
+Regularizes coefficients/weights/slopes/model parameters to avoid overfitting. 
+
+When slopes are high -- more complex model. When slopes are reduced. Models will perform better
+
+
+High Bias is where model is generatlized to training data and might work well with new data
+005.png
+
+coefficients are to be decreased by a little
+
+L1 and L2  (lasso and ridge)
+increase bias and reduce variance
+
+Lasso Regularization
+L1 allows feature selection 
+Lambda is the tuning factor
+regularization_demo -- Lambdda iin the forumal is alpha
+006.png -- train data fits well but not test data
+007.png -- difference between train data and test data is lessened. 
+008.png -- original line and regularized line. Goal is to get the regularized line
+
+
+To achieve that
+Ridge Regression can be used
+
+from sklearn.linear_model import Ridge
+ridge.fit(X_train, y_train)
+
+ridge = Ridge(norlaize=True,alpha=1.0)
+ridge.fit(X_train,y_train) -- alpah can be modified to reduce the sloppe
+
+---LassoCV
+from sklearn.linear_model import LassoCV
+
+lasso = LassoCV(normalize = True,  cv=3,alphase = [2,3,4]
+lasso.fit(X_train,y_train)
+lasso.coef_
+lasso.alpha
+
+-- 2 different techniques
+
+
+---------Grid Search -----------------
+Learning algorithm 
+
+Lets say h1, h2, h3 are hyper parameters -- 009.png
+
+The green colour at the top -- lets say that is the best
+
+---gridesearch_ref.ipynb
+model = RandomForestRegressor()
+p
+
+
+Grid Search is the best way to determine which is the best model
+
+GridSearchCV -- it is called GridSearchCrossValidation
+
+Model can be any thing -- like gradient descent -- hyper parameters must relate to the model
+
+
+complexity can be reduced by regularization. One of the ways is also to reduce the number of features. Dimensionality/feature reduction is a topic. If it is not possible to do feature reduction, regularization is a technique
+
+
+
+---------Pipeline-------------
+
+
+
+
+
+
+-- End 23rd June
+
 -- Start 22nd Jun
 prepare_data.ipynb-- for preparing car data -- pricing for cars
 price_finder_models.ipynb
