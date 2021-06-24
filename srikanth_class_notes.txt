@@ -2,6 +2,39 @@
 Pipeline
 Unsupervised Learning
 
+010.png -- pipeline diagram for train data
+
+Even for Test Data -- Same steps except in place of step 4, build-fit it is going to be product /predict 
+12.png -- for test -- there is no fit transform -- it is only transform
+
+
+pipeline_demo.ipynb
+
+polynomial/quadratic features -- for every 
+
+
+Unsupervised Machine Learning
+
+Unsupervised learning is a type of machine mearjing algorithm used to draw inferences from data sets consisting of input data without labelled responses.
+
+Labelling the data is a costly exercise
+
+Clustering is a technique
+Association is another technique
+
+Recommender system
+
+
+K MEans
+Unsupervised machine learning -- kmeans
+toy data sets are sample data sets -- 
+
+
+013.png will give a data frame frp, scikit learn
+
+df = bunch.frame -# This will create a data from 
+
+
 -- End 24 June
 
 
