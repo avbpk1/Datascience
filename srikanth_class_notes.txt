@@ -1,3 +1,9 @@
+-- Start 25 Jun
+kmeans and dbscan -- kmeans is generally more popular
+customer_se.ipynb
+
+-- End 25 Jun
+
 -- Start 24 Jun
 Pipeline
 Unsupervised Learning
