@@ -1,3 +1,16 @@
+-- Start 26 Jun
+collaborative and content based filtering --user based, item based
+
+movies_cf_final.ipynb
+Recommending movies using Colaborative Filtering
+
+goal is to find out the neighbours by similarity and dissimilarity
+
+hamming distance -- amount of disagreement. Less disagreement , the better
+
+
+-- End 26 Jun
+
 -- Start 25 Jun
 kmeans and dbscan -- kmeans is generally more popular
 customer_se.ipynb
