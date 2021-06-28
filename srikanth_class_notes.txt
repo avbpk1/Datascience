@@ -19,6 +19,17 @@ top_movies -- sort the movies by ratings -- top n movies
 
 -- Next step -- remove the movie the user has already watched
 
+Data Science Resources -- last class
+-- 43.png -- data analysis can be done with then
+Scikit-Learn(sklearn) -- popular machine learning libraries -- 
+Deep Learning -- Tensor flow, pytorch
+Clustering -- Unsupervised learning 
+statquest.org/MachineLearning -- ROC, AUC -- effectiveness of themodel
+
+realpython.com
+
+
+
 -- End 28 Jun
 
 -- Start 26 Jun
