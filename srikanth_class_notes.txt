@@ -1,3 +1,26 @@
+-- Start 28 Jun
+movies_cf_final.ipynb
+
+41.png -- steps to finding out the nearest neighbours by rating
+42.png
+nn_ratings is a dataframe and apply is to apply nanmean -- means mean operation on not null values
+
+nn_ratings.apply(np.nanmean).dropna() -- drop null values
+
+-- we are trying to find out the average rating of all movies for top 10 nearest neightbours
+
+apply the operation on each column by default -- pandas -- dataframe
+
+moviews_watched is going to give all movie ids that the -- Tilde symbol represents Not
+
+avg_ratings == avg_ratings [] -- returns the average rating for movies for which user has not watched
+
+top_movies -- sort the movies by ratings -- top n movies 
+
+-- Next step -- remove the movie the user has already watched
+
+-- End 28 Jun
+
 -- Start 26 Jun
 collaborative and content based filtering --user based, item based
 
